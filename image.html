@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Layout using Table</title>
+<style>
+  table {
+    width: 300px;
+    background-color: #333; 
+    color: #eee; 
+    padding: 20px;
+    border-radius: 5px; 
+  }
+  td {
+    padding: 8px 0;
+  }
+  input[type="text"] {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #eee;
+    box-sizing: border-box; 
+  }
+  button[type="submit"] {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  button[type="submit"]:hover {
+    opacity: 0.9;
+  }
+  strong {
+    color: white; 
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <strong>ENTER YOUR DETAILS BELOW</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center; font-size: 0.9em; color: #ccc;">
+      TO GET COMPLETE INFORMATION OR WE WILL CALL YOU
+    </td>
+  </tr>
+  <tr>
+    <td>Your Name</td>
+    <td><input type="text" placeholder="Your Name"></td>
+  </tr>
+  <tr>
+    <td>Phone No</td>
+    <td><input type="text" placeholder="Phone No"></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <button type="submit">Submit</button>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
